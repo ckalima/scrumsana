@@ -1,0 +1,201 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}Scrumsana{% endblock title %}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="{% static 'css/foundation.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome-4.0.3.min.css' %}" rel="stylesheet">
+    {% block css %}{% endblock css %}
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="{% static 'js/modernizr-2.7.1.js' %}"></script>
+    <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+    <script src="{% static 'js/fastclick-0.6.11.js' %}"></script>
+    <script src="{% static 'js/foundation-5.0.3.min.js' %}"></script>
+</head>
+
+<body>
+    {% block content %}
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="#">Scrumsana</a></h1>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+            </ul>
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="#">Left Nav Button</a></li>
+                </ul>
+                <ul class="right">
+                    <li class="active"><a href="#">Right Button Active</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Right Button with Dropdown</a>
+                        <ul class="dropdown">
+                            <li><a href="#">First link in dropdown</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <!-- Main Grid Section -->
+        <div class="row">
+            <div class="large-3 columns">
+                <div class="panel">
+                    <h5>
+                        Panel Title
+                    </h5>
+                    <p>
+                        This is a three columns grid panel with an arbitrary height.
+                    </p>
+                </div>
+            </div>
+            <div class="large-6 columns">
+                <div class="panel">
+                    <h5>
+                        Panel Title
+                    </h5>
+                    <p>
+                        This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.
+                    </p>
+                </div>
+            </div>
+            <div class="large-3 columns">
+                <div class="panel">
+                    <h5>
+                        Panel Title
+                    </h5>
+                    <p>
+                        This is a three columns grid panel with an arbitrary height.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-6 columns">
+                <div class="panel">
+                    <h5>
+                        Panel Title
+                    </h5>
+                    <p>
+                        This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.
+                    </p>
+                </div>
+            </div>
+            <div class="large-2 columns">
+                <div class="panel">
+                    <p>
+                        <img src="http://placehold.it/200x200">
+                    </p>
+                </div>
+            </div>
+            <div class="large-4 columns">
+                <div class="panel">
+                    <h5>
+                        Panel Title
+                    </h5>
+                    <p>
+                        This is a four columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-4 columns">
+                <div class="panel">
+                    <p>
+                        <img src="http://placehold.it/400x300">
+                    </p>
+                </div>
+            </div>
+            <div class="large-4 columns">
+                <div class="panel">
+                    <p>
+                        <img src="http://placehold.it/400x300">
+                    </p>
+                </div>
+            </div>
+            <div class="large-4 columns">
+                <div class="panel">
+                    <p>
+                        <img src="http://placehold.it/400x300">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-6 columns">
+                <div class="panel">
+                    <h5>
+                        Panel Title
+                    </h5>
+                    <p>
+                        This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.
+                    </p>
+                </div>
+            </div>
+            <div class="large-3 columns">
+                <div class="panel">
+                    <h5>
+                        Panel Title
+                    </h5>
+                    <p>
+                        This is a three columns grid panel with an arbitrary height.
+                    </p>
+                </div>
+            </div>
+            <div class="large-3 columns">
+                <div class="panel">
+                    <h5>
+                        Panel Title
+                    </h5>
+                    <p>
+                        This is a three columns grid panel with an arbitrary height.
+                    </p>
+                </div>
+            </div>
+        </div><!-- End Grid Section -->
+        <!-- Footer -->
+        <footer class="row">
+            <div class="large-12 columns">
+                <hr>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <p>
+                            © Copyright no one at all. Go to town.
+                        </p>
+                    </div>
+                    <div class="large-6 columns">
+                        <ul class="inline-list right">
+                            <li>
+                                <a href="#">Section 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Section 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Section 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Section 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    {% endblock content %}
+
+    <script>$(document).foundation();</script>
+    {% block footer_js %}{% endblock footer_js %}
+</body>
+</html>
